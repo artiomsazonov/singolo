@@ -9,6 +9,27 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "Lato-Black";
+    src: url("/assets/lato/Lato-Black.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url("/assets/lato/Lato-Light.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("/assets/lato/Lato-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
     font-family: "Lato-Bold";
 }
@@ -54,32 +75,54 @@ span {
 li:nth-child(1) .navli {
     color: #d3625c;
 }
-.slider{
+
+.slider {
     background-color: #f06c64;
 }
-.next img{
+
+.next img {
     transform: scale(-1, 1)
 }
-.next, .prev{
+
+.next,
+.prev {
     background-color: transparent;
     position: absolute;
     bottom: -110px;
 }
-.next{
+
+.next {
     right: 200px;
 }
-.prev{    
+
+.prev {
     left: 200px;
 }
-a{
+
+a {
     cursor: pointer;
 }
-.phone{
+
+.phone {
     padding: 52px 200px 57px 225px;
     display: flex;
     justify-content: space-between;
-    border-bottom:6px solid #ea676b;
+    border-bottom: 6px solid #ea676b;
 }
-.goriz{
-    padding:121px 0 0  0 ;
+
+.goriz {
+    padding: 121px 0 0 0;
+}
+
+h1 {
+    padding: 66px 0 32px 0;
+    font-family: "Lato-Black";
+    font-size: 22px;
+    color: rgb(102, 109, 137);
+}
+
+p {
+    font-family: "Lato-Light";
+    font-size: 13px;
+    color: rgb(118, 126, 158);
 }
