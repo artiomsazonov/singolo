@@ -46,19 +46,22 @@ header {
 }
 
 .header-flex {
-    padding: 34px 130px 34px 130px;
+    padding: 30px 130px 28px 130px;
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
 }
-
+.logo{
+    padding-bottom: 2px;
+}
 .navigation ul {
+    padding-top: 13px;
     display: flex;
-    font-size: 9px;
+    font-size: 12px;
 }
 
 li {
-    padding-right: 32px;
+    padding-right: 22px;
     color: #494e62;
 }
 
@@ -78,25 +81,24 @@ li:nth-child(1) .navli {
 
 .slider {
     background-color: #f06c64;
+   position: relative;
 }
 
 .next img {
     transform: scale(-1, 1)
 }
-
-.next,
-.prev {
+.slider .next, .slider .prev {
     background-color: transparent;
     position: absolute;
-    bottom: 205px;
+    bottom: 290px;
 }
 
-.next {
-    right: 200px;
+.slider .next {
+    right: 203px;
 }
 
-.prev {
-    left: 200px;
+.slider .prev {
+    left: 209px;
 }
 
 a {
@@ -104,7 +106,7 @@ a {
 }
 
 .phone {
-    padding: 52px 200px 57px 225px;
+    padding: 52px 200px 57px 204px;
     display: flex;
     justify-content: space-between;
     border-bottom: 6px solid #ea676b;
@@ -115,15 +117,16 @@ a {
 }
 
 h1 {
-    padding: 66px 0 32px 0;
+    padding: 57px 0 19px 0;
     font-family: "Lato-Black";
-    font-size: 22px;
+    font-size: 31px;
     color: rgb(102, 109, 137);
 }
 
 p {
     font-family: "Lato-Light";
-    font-size: 13px;
+    padding-left: 1px;
+    font-size: 17px;
     line-height: 170%;
     color: rgb(118, 126, 158);
 }
@@ -139,10 +142,10 @@ p {
 }
 
 .flex-item {
-    padding: 30px 0 10px 0;
+    padding: 19px 0 10px 0;
     width: 298px;    
     background-repeat: no-repeat;
-    background-position: 0 30px;
+    background-position: 0 24px;
 }
 
 .flex-item h3,
@@ -151,14 +154,15 @@ p {
 }
 
 h3 {
-    font-size: 14px;
+    font-size: 18px;
     font-family: "Lato-Black";
     color: rgb(102, 109, 137);
-    padding-bottom: 12px;
+    padding-bottom: 9px;
 }
 
 .flex-item p {
-    font-size: 8px;
+    font-size: 12px;
+    text-align: justify;
     line-height: 170%;
     font-family: "Lato-Regular";
     color: rgb(118, 126, 158);
