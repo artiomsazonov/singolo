@@ -88,7 +88,7 @@ li:nth-child(1) .navli {
 .prev {
     background-color: transparent;
     position: absolute;
-    bottom: -110px;
+    bottom: 205px;
 }
 
 .next {
@@ -124,5 +124,61 @@ h1 {
 p {
     font-family: "Lato-Light";
     font-size: 13px;
+    line-height: 170%;
     color: rgb(118, 126, 158);
+}
+
+.discription {
+    padding: 0 130px 25px 130px;
+}
+
+.services-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 130px 0 130px;
+}
+
+.flex-item {
+    padding: 30px 0 10px 0;
+    width: 298px;    
+    background-repeat: no-repeat;
+    background-position: 0 30px;
+}
+
+.flex-item h3,
+.flex-item p {
+    padding-left: 80px;
+}
+
+h3 {
+    font-size: 14px;
+    font-family: "Lato-Black";
+    color: rgb(102, 109, 137);
+    padding-bottom: 12px;
+}
+
+.flex-item p {
+    font-size: 8px;
+    line-height: 170%;
+    font-family: "Lato-Regular";
+    color: rgb(118, 126, 158);
+    line-height: 1.797;
+}
+.pensil{
+    background-image: url("/assets/pensil.png");
+}
+.lamp{
+    background-image: url("/assets/lamp.png");
+}
+.msg{
+    background-image: url("/assets/msg.png");
+}
+.like{
+    background-image: url("/assets/like.png");
+}
+.phon{
+    background-image: url("/assets/phone.png");
+}
+.star{
+    background-image: url("/assets/star.png");
 }
