@@ -190,20 +190,20 @@ h3 {
     line-height: 1.797;
 }
 .pensil{
-    background-image: url("/assets/pensil.png");
+    background-image: url("assets/pensil.png");
 }
 .lamp{
-    background-image: url("/assets/lamp.png");
+    background-image: url("assets/lamp.png");
 }
 .msg{
-    background-image: url("/assets/msg.png");
+    background-image: url("assets/msg.png");
 }
 .like{
-    background-image: url("/assets/like.png");
+    background-image: url("assets/like.png");
 }
 .phon{
-    background-image: url("/assets/phone.png");
+    background-image: url("assets/phone.png");
 }
 .star{
-    background-image: url("/assets/star.png");
+    background-image: url("assets/star.png");
 }
