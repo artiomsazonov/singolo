@@ -54,7 +54,7 @@ header {
     padding-top: 3px;
 }
 
-h1 {
+h2 {
     font-family: Lato-Black;
     font-size: 30px;
     color: rgb(102, 109, 137);
@@ -68,6 +68,7 @@ p {
     color: #767e9e;
     font-family: Lato-Light;
     text-align: justify;
+    margin: 0 80px 0 0px;
 }
 
 .navigation {
@@ -176,33 +177,47 @@ p {
 .services {
     background-color: #f2f2f2;
     border-bottom: 6px solid #fff;
-    padding: 36px 0 66px 0;
-}
-
-.discription p {
-    font-size: 18px;
-    line-height: 1.667;
+    padding: 59px 0 66px 0;
 }
 
 .services-flex {
+    width: 960px;
     display: flex;
-    justify-content: space-between;
-    padding-top: 52px;
+    margin: 44px 0px 0px 0px;
+    
 }
-
+.flex-item{
+    width: 300px;
+    height: 300px;
+    margin: 0 20px 0 0;
+}
+.avatar {
+    width: 300px;
+    height: 300px;    
+}
 h3 {
-    font-size: 14px;
-    color: rgb(102, 109, 137);
-    line-height: 0.992;
-    padding: 18px 0 18px 0;
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: Lato-Black;
+    text-align: justify;
+    margin-bottom: -3px;
+    margin-left: -2px;
+    padding: 16px 0 14px 0;
 }
 
 .flex-item p {
     font-size: 12px;
-    line-height: 1.797;
-    padding-bottom: 29px;
+    line-height: 21px;
+    color: #767e9e;
+    font-family: Lato-Regular;
+    text-align: justify;
+    width: 300px;
+    
 }
-
-.flex-item img {
-    padding-right: 8px;
+.flex-item div{
+    margin-right: 10px;
+}
+.flex-item a img{
+    padding: 22px 6px 0 0;
 }
