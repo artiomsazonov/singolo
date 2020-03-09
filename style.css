@@ -232,7 +232,7 @@ h1 {
 
 .portfolio_title {
     color: #fff;
-    padding: 96px 40px 48px 41px;
+    padding: 62px 40px 48px 41px;
 }
 
 .discription h2 {
@@ -373,7 +373,7 @@ h1 {
 }
 
 .aboutUs {
-    padding: 63px 40px 210px 40px;
+    padding: 63px 40px 209px 40px;
 }
 
 .aboutUs .discription {
@@ -472,7 +472,7 @@ singolo 3*/
 }
 
 .get {
-    padding: 85px 40px 0;
+    padding: 59px 40px 0;
 }
 
 .get_quote h2 {
@@ -521,7 +521,7 @@ input::placeholder,
 .send {
     color: #f48c8f;
     padding-left: 15px;
-    margin: 0 21px 13px 0;
+    margin: 0 21px 12px 0;
 }
 
 .send {
