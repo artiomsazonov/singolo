@@ -188,6 +188,7 @@ h3{
 .flex-item h3 {       
     color: #666d89;
     margin: 0;
+    letter-spacing: -0.1px;
 }
 
 .flex-item p {
@@ -204,6 +205,7 @@ h3{
 }
 .pensil p{
     padding-left: 81px;
+    letter-spacing: -0.1px;
 }
 .lamp {
     background-image: url("assets/lamp.png");
@@ -224,7 +226,8 @@ h3{
     background-image: url("assets/star.png");
 }
 .msg p, .phon p, .star p{
-    padding: 4px 0 0 80px;
+    padding: 4px 0 0 79px;
+    letter-spacing: -0.1px;
 }
 
 
@@ -408,6 +411,7 @@ h3{
 .about-item h3 {   
     color: #666d89;     
     padding: 14px 0 9px 0;
+    letter-spacing: -0.1px;
 }
 
 .about-item p {
