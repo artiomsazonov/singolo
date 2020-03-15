@@ -18,11 +18,11 @@
                 </div>
                 <div class="navigation">
                     <ul>
-                        <li><a href="#"><span class="navli">Home</span></a></li>
-                        <li><a href="#"><span class="navli">SERVICES</span></a></li>
-                        <li><a href="#"><span class="navli">PORTFOLIO</span></a></li>
-                        <li><a href="#"><span class="navli">ABOUT</span></a></li>
-                        <li><a href="#"><span class="navli">CONTACT</span></a></li>
+                        <li><a href="#"><span class="navli navli_home">Home</span></a></li>
+                        <li><a href="#services"><span class="navli navli_services">SERVICES</span></a></li>
+                        <li><a href="#portfolio"><span class="navli navli_portfolio">PORTFOLIO</span></a></li>
+                        <li><a href="#about"><span class="navli navli_about">ABOUT</span></a></li>
+                        <li><a href="#contact"><span class="navli navli_contact">CONTACT</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -30,15 +30,26 @@
     </header>
     <div class="slider">
         <div class="container">
-            <div class="phone">
-                <div class="vertic"><img src="assets/phone v.png" alt=""></div>
-                <div class="goriz"><img src="assets/phone g.png" alt=""></div>
+            <div class="slid1 ">
+                <div class="phone">
+                    <div class="vertic">
+                        <img src="assets/phoneV.png" alt="">
+                        <img src="assets/black.png" class="black none">
+                    </div>
+                    <div class="goriz">
+                        <img src="assets/phoneG.png" alt="">
+                        <img src="assets/black.png" class="black-goriz none">
+                    </div>
+                </div>
             </div>
-            <a class="prev"><img src="assets/button.png" alt="prev"></a>
-            <a class="next"><img src="assets/button.png" alt="next"></a>
+            <div class="slid2 none">
+                <img src="assets/Slide-2.png" alt="">
+            </div>
+            <a class="prev" onclick="prev()"><img src="assets/button.png" alt="prev"></a>
+            <a class="next" onclick="next()"><img src="assets/button.png" alt="next"></a>
         </div>
     </div>
-    <section class="services">
+    <section id="services">
         <div class="container">
             <div class="discription">
                 <h1>Our Services</h1>
@@ -67,7 +78,8 @@
             <div class="services-flex">
                 <div class="flex-item phon">
                     <h3>Responsive Layout</h3>
-                    <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-<br>sent elit
+                    <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-<br>sent
+                        elit
                         leo.</p>
                 </div>
                 <div class="flex-item msg">
@@ -84,7 +96,7 @@
     </section>
 
     <!--   singolo 2    -->
-    <section class="portfolio">
+    <section id="portfolio">
         <div class="container">
             <div class="portfolio_title">
                 <div class="discription">
@@ -93,10 +105,10 @@
                     </p>
                 </div>
                 <div class='navigation'>
-                    <button>All</button>
-                    <button>Web Design</button>
-                    <button>Graphic Design</button>
-                    <button>Artwork</button>
+                    <button class="all activButton">All</button>
+                    <button class="webDesign">Web Design</button>
+                    <button class="graphic">Graphic Design</button>
+                    <button class="artwork">Artwork</button>
                 </div>
                 <div class='gallery'>
                     <div></div>
@@ -114,7 +126,7 @@
                 </div>
             </div>
     </section>
-    <section class="about">
+    <section id="about">
         <div class="container">
             <div class="aboutUs">
                 <div class="discription">
@@ -170,7 +182,7 @@
         </div>
     </section>
 
-    
+
     <!-- singolo 3 -->
 
     <section class="get_quote">
@@ -182,15 +194,15 @@
                     cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="quote-flex">
                     <div class="quote-item">
-                        <form id="second_form" class="form-msg">
-                            <input name="fio" type="text" placeholder="Name (Required)" required>
-                            <input name="email" type="text" placeholder="Email (Required)" required>
-                            <input name="subject" type="text" placeholder="Subject" required>
-                            <textarea placeholder="Describe your project in detail..."></textarea>
+                        <form>
+                            <input class="ame" type="text" name="name" placeholder="Name (Required)" required>
+                            <input class="email" type="email" name="email" placeholder="Email (Required)" required>
+                            <input class='subject' type="text" name="subject" placeholder="Subject">
+                            <textarea class="describe" name="message" placeholder="Describe your project in detail..."></textarea>
                             <input type="submit" value="Send" class="send">
                         </form>
                     </div>
-                    <div class="quote-item">
+                    <div class="quote-item" id="contact">
                         <h3>Contact Information</h3>
                         <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver- <br> ra nibh. <span>Fusce
                                 vitae
@@ -201,8 +213,10 @@
                         <div class='contact'>
                             <img src='assets/geo.png'><span>Elm St. 14/05 Lost
                                 City</span><br>
-                            <img src='assets/tel.png'><a href="tel:803528 331 86 35"><span>03528 331 86 35</span></a><br>
-                            <img src='assets/mel.png'><a href="mailto:info@singolo.com"><span id="email">info@singolo.com</span></a>
+                            <img src='assets/tel.png'><a href="tel:803528 331 86 35"><span>03528 331 86
+                                    35</span></a><br>
+                            <img src='assets/mel.png'><a href="mailto:info@singolo.com"><span
+                                    id="email">info@singolo.com</span></a>
 
                         </div>
                     </div>
@@ -225,6 +239,8 @@
             </div>
         </div>
     </footer>
+    <div id="mdl_msg" class="none"><div></div> <span class="cross">OK</span></div>
+    <script src="script.js"></script>
 </body>
 
 </html>
