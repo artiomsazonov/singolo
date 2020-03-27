@@ -28,27 +28,29 @@
             </div>
         </div>
     </header>
-    <div class="slider">
+    <section id="slider">
         <div class="container">
-            <div class="slid1 ">
-                <div class="phone">
-                    <div class="vertic">
-                        <img src="assets/phoneV.png" alt="">
-                        <img src="assets/black.png" class="black none">
-                    </div>
-                    <div class="goriz">
-                        <img src="assets/phoneG.png" alt="">
-                        <img src="assets/black.png" class="black-goriz none">
+            <div class="sliders">
+                <div class="slid1 ">
+                    <div class="phone">
+                        <div class="vertic">
+                            <img src="assets/phoneV.png" alt="">
+                            <img src="assets/black.png" class="black none">
+                        </div>
+                        <div class="goriz">
+                            <img src="assets/phoneG.png" alt="">
+                            <img src="assets/black.png" class="black-goriz none">
+                        </div>
                     </div>
                 </div>
+                <div class="slid2 none">
+                    <img src="assets/Slide-2.png" alt="">
+                </div>
+                <a class="prev" onclick="prev()"><img src="assets/button.png" alt="prev"></a>
+                <a class="next" onclick="next()"><img src="assets/button.png" alt="next"></a>
             </div>
-            <div class="slid2 none">
-                <img src="assets/Slide-2.png" alt="">
-            </div>
-            <a class="prev" onclick="prev()"><img src="assets/button.png" alt="prev"></a>
-            <a class="next" onclick="next()"><img src="assets/button.png" alt="next"></a>
         </div>
-    </div>
+    </section>
     <section id="services">
         <div class="container">
             <div class="discription">
@@ -74,8 +76,6 @@
                     <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque
                         condimentum.</p>
                 </div>
-            </div>
-            <div class="services-flex">
                 <div class="flex-item phon">
                     <h3>Responsive Layout</h3>
                     <p>Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Prae-<br>sent
@@ -198,7 +198,8 @@
                             <input class="ame" type="text" name="name" placeholder="Name (Required)" required>
                             <input class="email" type="email" name="email" placeholder="Email (Required)" required>
                             <input class='subject' type="text" name="subject" placeholder="Subject">
-                            <textarea class="describe" name="message" placeholder="Describe your project in detail..."></textarea>
+                            <textarea class="describe" name="message"
+                                placeholder="Describe your project in detail..."></textarea>
                             <input type="submit" value="Send" class="send">
                         </form>
                     </div>
@@ -239,7 +240,9 @@
             </div>
         </div>
     </footer>
-    <div id="mdl_msg" class="none"><div></div> <span class="cross">OK</span></div>
+    <div id="mdl_msg" class="none">
+        <div></div> <span class="cross">OK</span>
+    </div>
     <script src="script.js"></script>
 </body>
 

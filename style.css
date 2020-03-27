@@ -102,34 +102,38 @@ li:nth-child(1) .navli {
     ;
 }
 
-.slider {
+#slider {
     background-color: #f06c64;
-    position: relative;
     border-bottom: 6px solid #ea676b;
     padding-top: 95px;
+}
+
+.sliders {
+    position: relative;
 }
 
 .next img {
     transform: scale(-1, 1)
 }
 
-.slider .next,
-.slider .prev {
+.sliders .next,
+.sliders .prev {
     background-color: transparent;
     position: absolute;
     bottom: 280px;
     opacity: .5;
 }
 
-.slider .next {
-    right: 203px;
+.sliders .next {
+    right: 0;
+    padding-right: 40px;
 }
 
-.slider .prev {
-    left: 206px;
+.sliders .prev {
+    padding-left: 42px;
 }
 
-.slider a:hover {
+.sliders a:hover {
     opacity: 1;
 }
 
@@ -153,8 +157,8 @@ a {
 }
 
 .sliderActiv {
-    background-color: #648bf0;
-    border-bottom: 6px solid #5677cd;
+    background-color: #648bf0 !important;
+    border-bottom: 6px solid #5677cd !important;
 }
 
 .slid2 img {
@@ -203,16 +207,19 @@ h1 {
 
 .services-flex {
     display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
     justify-content: space-between;
     padding: 0 40px 0 40px;
 }
 
 .flex-item {
     padding: 19px 0 10px 0;
-    width: 298px;
+    width: 300px;
     background-repeat: no-repeat;
     background-position: 0 22px;
     text-align: justify;
+    /* margin-right: 20px; */
 }
 
 .flex-item h3,
@@ -258,7 +265,6 @@ h3 {
 
 .like {
     background-image: url("assets/like.png");
-
 }
 
 .msg {
@@ -318,11 +324,13 @@ h3 {
     width: 288px;
     padding: 11px 0 19px 0;
 }
-button, 
-button:active, 
+
+button,
+button:active,
 button:focus {
     outline: none;
 }
+
 .all,
 .artwork,
 .webDesign,
@@ -356,10 +364,13 @@ button:focus {
     border: 1px solid #c5c5c5;
     color: #dedede;
 }
+
 .gallery {
     width: 960px;
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
 }
 
 .gallery div {
@@ -602,7 +613,8 @@ input::placeholder {
     padding-left: 15px;
     margin: 0 21px 12px 0;
 }
-.send{
+
+.send {
     background-color: #FBC65F;
     color: #886A30;
     font-size: 14px;
@@ -610,6 +622,7 @@ input::placeholder {
     text-align: center;
 
 }
+
 .send:hover {
     cursor: pointer;
     background-color: rgb(114, 189, 250);
@@ -717,16 +730,18 @@ footer {
     height: 100%;
     overflow: auto;
     background-color: #000;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, .4);
 }
-#mdl_msg div{
+
+#mdl_msg div {
     width: 20%;
     height: 50%;
     margin-left: 25%;
     background-color: thistle;
     color: black;
-    padding:20px 0 0 100px;
+    padding: 20px 0 0 100px;
 }
+
 .cross {
     color: rgb(97, 53, 53);
     position: relative;
@@ -734,11 +749,61 @@ footer {
     left: 34%;
     font-size: 28px;
     font-weight: bold;
-  }
+}
 
-  .cross:hover,
-  .cross:focus {
+.cross:hover,
+.cross:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+}
+
+@media screen and (max-width: 1020px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .vertic {
+        height: 364px;
+    }
+
+    .vertic [src="assets/phoneV.png"] {
+        width: 180px;
+        height: 363px;
+    }
+
+    .vertic [src="assets/black.png"],
+    .goriz [src="assets/black.png"] {
+        width: 142px;
+        height: 251px;
+    }
+
+    .goriz [src="assets/phoneG.png"] {
+        height: 180px;
+        width: 363px;
+    }
+
+    .black {
+        left: 10px;
+        bottom: 318px;
+    }
+
+    .black-goriz {
+        left: 99px;
+        bottom: 228px;
+    }
+
+    .sliders .next,
+    .sliders .prev {
+        bottom: 215px;
+    }
+    .gallery {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 375px) {}

@@ -58,7 +58,7 @@ window.addEventListener('scroll', function () {
 // slider
 var slider1 = document.querySelector('.slid1');
 var slider2 = document.querySelector('.slid2');
-var slider = document.querySelector('.slider');
+var slider = document.querySelector('#slider');
 function next() {
     slider1.classList.toggle("none");
     slider2.classList.toggle("none");
