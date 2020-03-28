@@ -178,3 +178,18 @@ function clearInputs() {
 cross.addEventListener('click', function () {
     mdlMsg.classList.add('none')
 })
+// burger-menu
+window.onload = function(){
+    let menu = document.querySelector(".burger-menu");
+    let button = menu.querySelector(".burger-menu__button");
+    let links = menu.querySelector(".burger-menu__lines");
+    let overlay = menu.querySelector(".burger-menu__overlay")
+    let nav = menu.querySelector(".burger-menu__nav")
+    button.onclick = toggleMenu;    
+    links.onclick = toggleMenu;
+    overlay.onclick = toggleMenu;
+    nav.onclick = toggleMenu;
+    function toggleMenu() {
+        menu.classList.toggle('burger-menu_active');
+    }
+}
