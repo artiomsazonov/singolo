@@ -797,10 +797,116 @@ footer {
 
     .sliders .next,
     .sliders .prev {
-        bottom: 215px;
+        bottom: 201px;
     }
+
+    .sliders .prev {
+        padding-left: 28px;
+    }
+
+    .sliders .next {
+        padding-right: 27px;
+    }
+
     .gallery {
         width: 100%;
+    }
+
+    .gallery div {
+        width: 216px;
+        height: 183px;
+        margin: 0 0 20px 0;
+    }
+
+    .about-flex {
+        width: 100%;
+    }
+
+    .about-item,
+    .avatar {
+        width: 219px;
+        height: 219px;
+        margin: 0 15px 0 0;
+    }
+
+    .about-item p {
+        width: 219px !important;
+    }
+
+    .get_quote p {
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        width: 442px;
+        height: 37px;
+        margin: 0 21px 13px 0;
+    }
+
+    textarea {
+        height: 159px;
+    }
+
+    .quote-flex {
+        width: 100%;
+    }
+
+    .footer-container .social {
+        right: 35px;
+    }
+
+    /* подгон */
+    .navigation ul {
+        padding-top: 10px;
+    }
+
+    .phone {
+        padding: 41px 110px 39px 84px;
+    }
+
+    .goriz {
+        padding: 92px 0 0 55px;
+    }
+
+    h1 {
+        padding: 39px 0 19px 0;
+    }
+
+    .flex-item {
+        padding: 11px 33px 42px 0;
+        background-position: 0 12px;
+    }
+
+    #services {
+        padding-bottom: 27px;
+    }
+    .discription p {
+        width: 638px;
+    }
+    #portfolio .navigation {        
+        padding: 11px 0 31px 0;
+    }
+    .aboutUs {
+        padding: 55px 40px 209px 40px;
+    }
+    .about-flex {
+        margin: 39px 0px 0px 2px;
+    }
+    .about-item h3 {
+        padding: 8px 0 3px 0;
+    }
+    .social span {
+        margin: 14px 5px 0 0px;
+    }
+    .get {
+        padding: 52px 40px 29px;
+    }
+    .quote-flex {
+        margin: 25px 0px 0px 0px;
+    }
+    .footer-container .social {
+        top: 7px;
     }
 }
 
