@@ -14,10 +14,19 @@ window.addEventListener("scroll", function () {
     } else if (appended) {
         header.style.paddingTop = "30px"
         header.style.paddingBottom = "28px"
-        burgerButton.style.top = "26px"
+        burgerButton.style.top = "21px"
         appended = false;
     }
-
+});
+window.addEventListener("scroll", function () {
+    var width = window.innerWidth
+    var header = document.querySelector('.header-flex');
+    var burgerButton = document.querySelector('.burger-menu__button');
+    if ( width< 768) {
+        header.style.paddingTop = "9px"
+        header.style.paddingBottom = "15px"
+        burgerButton.style.top = "6px"
+    }
 });
 window.addEventListener('scroll', function () {
     var scroll = pageYOffset;
@@ -88,7 +97,7 @@ var slider2 = document.querySelector('.slid2');
 var slider = document.querySelector('#slider');
 function next() {
     slider1.classList.toggle("none");
-    slider2.classList.toggle("none");    
+    slider2.classList.toggle("none");
     setTimeout(function () {
         slider2.classList.toggle('opacityNan');
         slider1.classList.toggle("opacityNan");
@@ -97,7 +106,7 @@ function next() {
 }
 function prev() {
     slider1.classList.toggle("none");
-    slider2.classList.toggle("none");    
+    slider2.classList.toggle("none");
     setTimeout(function () {
         slider2.classList.toggle('opacityNan');
         slider1.classList.toggle("opacityNan");
@@ -215,18 +224,18 @@ function clearInputs() {
 cross.addEventListener('click', function () {
     mdlMsg.classList.add('none')
 })
- // burger-menu
+// burger-menu
 
-    let menu = document.querySelector(".burger-menu");
-    let button = menu.querySelector(".burger-menu__button");
-    let overlay = menu.querySelector(".burger-menu__overlay")
-    let nav = menu.querySelector(".burger-menu__nav")
-    button.onclick = toggleMenu;
-    overlay.onclick = toggleMenu;
-    nav.onclick = toggleMenu;
-    function toggleMenu() {
-        menu.classList.toggle('burger-menu_active');
-        if (menu.classList.contains('burger-menu_active')) {
-            document.querySelector('body').style.overflow = 'hidden'
-        } else document.querySelector('body').style.overflow = 'visible'
-    }
+let menu = document.querySelector(".burger-menu");
+let button = menu.querySelector(".burger-menu__button");
+let overlay = menu.querySelector(".burger-menu__overlay")
+let nav = menu.querySelector(".burger-menu__nav")
+button.onclick = toggleMenu;
+overlay.onclick = toggleMenu;
+nav.onclick = toggleMenu;
+function toggleMenu() {
+    menu.classList.toggle('burger-menu_active');
+    if (menu.classList.contains('burger-menu_active')) {
+        document.querySelector('body').style.overflow = 'hidden'
+    } else document.querySelector('body').style.overflow = 'visible'
+}

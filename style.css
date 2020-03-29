@@ -625,9 +625,10 @@ textarea {
 }
 
 input::placeholder {
-    color: #f48c8f;
-    padding-left: 15px;
-    margin: 0 21px 12px 0;
+    font-size: 12px;
+    color: #ee8284;
+    font-family: Lato-Regular;
+    margin-left: 20px;
 }
 
 .send {
@@ -869,7 +870,7 @@ footer {
     textarea {
         width: 442px;
         height: 37px;
-        margin: 0 21px 13px 0;
+        margin: 0 27px 13px 0;
     }
 
     textarea {
@@ -907,7 +908,7 @@ footer {
     }
 
     #services {
-        padding-bottom: 27px;
+        padding-bottom: 18px;
     }
 
     .discription p {
@@ -941,9 +942,14 @@ footer {
     .quote-flex {
         margin: 25px 0px 0px 0px;
     }
-
+    .quote-item p {
+        padding-top: 2px;
+    }
     .footer-container .social {
         top: 7px;
+    }
+    .contact {
+        margin-top: 10px;
     }
 }
 
@@ -1134,7 +1140,7 @@ footer {
     }
 
     #services .discription {
-        padding: 0 26px 25px 31px;
+        padding: 0 36px 25px 31px;
     }
 
     h1 {
@@ -1253,8 +1259,7 @@ footer {
     }
 
     .get {
-        padding: 44px 30px 42px;
-    }
+        padding: 44px 30px 42px;}
 
     .quote-flex {
         flex-wrap: wrap;
@@ -1263,16 +1268,20 @@ footer {
         margin: 21px 0px 0px 0px;
     }
 
+    .aboutUs .discription {
+        padding: 0 27px 2px 0;
+    }
+
     input,
     textarea,
     .send {
-        width: 106%;
+        width: 315px;
         margin: 0 0 13px 0;
     }
 
     .send {
         height: 50px;
-        margin-bottom: 30px;
+        margin-bottom: 36px;
     }
 
     .quote-item p {
@@ -1293,7 +1302,7 @@ footer {
     }
 
     .footer-container .social {
-        right: 88px;
+        right: 105px;
     }
 
     #mdl_msg div {
@@ -1302,6 +1311,10 @@ footer {
 
     .cross {
         left: 42%;
+    }
+    .get_quote p {
+        text-align: left;
+        width: 305px;
     }
 }
 
@@ -1348,10 +1361,11 @@ footer {
         width: 250px;
         margin: 0;
     }
-  
+
     .gallery div {
         width: 120px;
         height: 90px;
         background-size: 120px 90px;
     }
+    
 }
