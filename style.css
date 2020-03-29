@@ -1304,14 +1304,22 @@ footer {
         left: 42%;
     }
 }
+
 @media screen and (max-width: 395px) {
-.gallery div {
-    margin: 0 0px 14px 0;
-}}
+    .gallery div {
+        margin: 0 0px 14px 0;
+    }
+    .gallery {
+        width: 112%;
+        margin: 0 0 0 -25px;
+    }
+}
+
 @media screen and (max-width: 374px) {
     #services {
         padding-right: 10px;
     }
+
     .vertic [src="assets/phoneV.png"] {
         width: 70px;
         height: 141px;
