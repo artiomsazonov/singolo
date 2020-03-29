@@ -28,13 +28,17 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Lato-Bold;
 }
 
 .container {
     width: 1020px;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 header {
@@ -98,16 +102,26 @@ li:nth-child(1) .navli {
 }
 
 .navli:hover {
-    color: #d3625c;
-    ;
+    color: #d3625c !important;
 }
 
 #slider {
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
     padding-top: 95px;
+    transition: opacity 0.3s ease;
 }
-
+.slid2, .slid1{
+    transition: opacity 0.3s ease;
+}
+.opacityNan{
+    opacity: 0;
+}
+.sliderActiv {
+    background-color: #648bf0 !important;
+    border-bottom: 6px solid #5677cd !important;
+    transition: opacity 0.3s ease;
+}
 .sliders {
     position: relative;
 }
@@ -156,10 +170,7 @@ a {
     height: 483px;
 }
 
-.sliderActiv {
-    background-color: #648bf0 !important;
-    border-bottom: 6px solid #5677cd !important;
-}
+
 
 .slid2 img {
     padding: 43px 252px 38px 252px;
@@ -578,7 +589,7 @@ singolo 3*/
     line-height: 30px;
     font-family: Lato-Light;
     text-align: justify;
-    margin: 0 80px 0 0px;
+    margin: 0 20px 0 0px;
     width: 940px;
 }
 
@@ -762,7 +773,7 @@ footer {
     display: none;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1035px) {
     .container {
         width: 100%;
         margin: 0 auto;
@@ -783,7 +794,11 @@ footer {
         width: 142px;
         height: 251px;
     }
-
+    .slid2 img {
+        width: 364px;
+        height: 363px;
+        padding: 40px 0 38px 205px;
+    }
     .goriz [src="assets/phoneG.png"] {
         height: 180px;
         width: 363px;
@@ -938,6 +953,7 @@ footer {
         font-size: 19px;
     }
 
+    /* burger-menu */
     .burger-menu {
         display: block;
     }
@@ -950,6 +966,7 @@ footer {
         width: 30px;
         height: 30px;
         transition: .2s linear;
+        transition: 0.4s;
     }
 
     .burger-menu__button:hover .burger-menu__lines {
@@ -963,6 +980,7 @@ footer {
         width: 25px;
         height: 2.4px;
         background-color: white;
+        transition: 0.2s;
     }
 
     .burger-menu__lines {
@@ -1005,13 +1023,13 @@ footer {
         height: 100%;
         background-color: #2D303A;
         overflow: auto;
-        left: 100%;
+        left: -100%;
+        transition: 0.6s;
     }
 
     .burger-menu__nav a {
         padding-bottom: 25px;
     }
-
     .burger-menu_active .burger-menu__nav {
         left: 0;
     }
@@ -1097,6 +1115,8 @@ footer {
     .slid2 img {
         padding: 0px 0px 15px 116px;
         width: 179px;
+        height: 178px;
+
     }
 
     #services {
@@ -1247,7 +1267,7 @@ footer {
 
     .quote-item p {
         padding-top: 3px;
-        width: 105%;
+        width: 103%;
     }
 
     .contact {
@@ -1302,6 +1322,7 @@ footer {
     .slid2 img {
         padding: 0px 0px 14px 75px;
         width: 142px;
+        height: 141px;
     }
 
     #portfolio .navigation {

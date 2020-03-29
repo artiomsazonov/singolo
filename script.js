@@ -2,8 +2,8 @@
 var appended = false;
 window.addEventListener("scroll", function () {
     var scroll = pageYOffset;
-    var header = document.querySelector('.header-flex')
-    var burgerButton = document.querySelector(".burger-menu__button")
+    var header = document.querySelector('.header-flex');
+    var burgerButton = document.querySelector('.burger-menu__button');
     if (scroll > 95) {
         if (!appended) {
             header.style.paddingTop = "0"
@@ -21,58 +21,90 @@ window.addEventListener("scroll", function () {
 });
 window.addEventListener('scroll', function () {
     var scroll = pageYOffset;
-    var home = document.querySelector('.navli_home');
-    var services = document.querySelector('.navli_services');
-    var portfolio = document.querySelector('.navli_portfolio');
-    var about = document.querySelector('.navli_about');
-    var contact = document.querySelector('.navli_contact');
+    var home = document.querySelectorAll('.navli_home');
+    var services = document.querySelectorAll('.navli_services');
+    var portfolio = document.querySelectorAll('.navli_portfolio');
+    var about = document.querySelectorAll('.navli_about');
+    var contact = document.querySelectorAll('.navli_contact');
     if (scroll >= 415 && scroll < 1016) {
-        home.style.color = "#fff"
-        services.style.color = '#d3625c'
-        portfolio.style.color = '#fff'
+        home[0].style.color = "#fff"
+        services[0].style.color = '#d3625c'
+        portfolio[0].style.color = '#fff'
+        home[1].style.color = "#fff"
+        services[1].style.color = '#d3625c'
+        portfolio[1].style.color = '#fff'
     }
     else if (scroll >= 1016 && scroll < 2060) {
-        home.style.color = "#fff"
-        services.style.color = '#fff'
-        portfolio.style.color = '#d3625c'
-        about.style.color = '#fff'
+        home[0].style.color = "#fff"
+        services[0].style.color = '#fff'
+        portfolio[0].style.color = '#d3625c'
+        about[0].style.color = '#fff'
+        home[1].style.color = "#fff"
+        services[1].style.color = '#fff'
+        portfolio[1].style.color = '#d3625c'
+        about[1].style.color = '#fff'
     }
     else if (scroll >= 2060 && scroll < 2712) {
-        home.style.color = "#fff"
-        services.style.color = '#fff'
-        portfolio.style.color = '#fff'
-        about.style.color = '#d3625c'
-        contact.style.color = '#fff'
+        home[0].style.color = "#fff"
+        services[0].style.color = '#fff'
+        portfolio[0].style.color = '#fff'
+        about[0].style.color = '#d3625c'
+        contact[0].style.color = '#fff'
+        home[1].style.color = "#fff"
+        services[1].style.color = '#fff'
+        portfolio[1].style.color = '#fff'
+        about[1].style.color = '#d3625c'
+        contact[1].style.color = '#fff'
     }
     else if (scroll >= 2712) {
-        home.style.color = "#fff"
-        services.style.color = '#fff'
-        portfolio.style.color = '#fff'
-        about.style.color = '#fff'
-        contact.style.color = '#d3625c'
+        home[0].style.color = "#fff"
+        services[0].style.color = '#fff'
+        portfolio[0].style.color = '#fff'
+        about[0].style.color = '#fff'
+        contact[0].style.color = '#d3625c'
+        home[1].style.color = "#fff"
+        services[1].style.color = '#fff'
+        portfolio[1].style.color = '#fff'
+        about[1].style.color = '#fff'
+        contact[1].style.color = '#d3625c'
     }
     else {
-        home.style.color = "#d3625c"
-        services.style.color = '#fff'
-        portfolio.style.color = '#fff'
-        about.style.color = '#fff'
-        contact.style.color = '#fff'
+        home[0].style.color = "#d3625c"
+        services[0].style.color = '#fff'
+        portfolio[0].style.color = '#fff'
+        about[0].style.color = '#fff'
+        contact[0].style.color = '#fff'
+        home[1].style.color = "#d3625c"
+        services[1].style.color = '#fff'
+        portfolio[1].style.color = '#fff'
+        about[1].style.color = '#fff'
+        contact[1].style.color = '#fff'
     }
 });
+
 // slider
 var slider1 = document.querySelector('.slid1');
 var slider2 = document.querySelector('.slid2');
 var slider = document.querySelector('#slider');
 function next() {
     slider1.classList.toggle("none");
-    slider2.classList.toggle("none");
-    slider.classList.toggle("sliderActiv")
+    slider2.classList.toggle("none");    
+    setTimeout(function () {
+        slider2.classList.toggle('opacityNan');
+        slider1.classList.toggle("opacityNan");
+        slider.classList.toggle("sliderActiv");
+    }, 300)
 }
 function prev() {
     slider1.classList.toggle("none");
-    slider2.classList.toggle("none");
-    slider.classList.toggle("sliderActiv")
+    slider2.classList.toggle("none");    
+    setTimeout(function () {
+        slider2.classList.toggle('opacityNan');
+        slider1.classList.toggle("opacityNan");
+        slider.classList.toggle("sliderActiv");
+    }, 300)
 }
+
 var verticalPhone = document.querySelector(".vertic");
 var gorizontPhone = document.querySelector(".goriz");
 verticalPhone.addEventListener('click', function () {
@@ -82,7 +114,8 @@ verticalPhone.addEventListener('click', function () {
 gorizontPhone.addEventListener('click', function () {
     var gorizV = document.querySelector('.black-goriz');
     gorizV.classList.toggle('none');
-})
+});
+
 
 // galerey
 window.onload = function () {
@@ -182,8 +215,7 @@ function clearInputs() {
 cross.addEventListener('click', function () {
     mdlMsg.classList.add('none')
 })
-// burger-menu
-window.onload = function () {
+ // burger-menu
 
     let menu = document.querySelector(".burger-menu");
     let button = menu.querySelector(".burger-menu__button");
@@ -194,5 +226,7 @@ window.onload = function () {
     nav.onclick = toggleMenu;
     function toggleMenu() {
         menu.classList.toggle('burger-menu_active');
+        if (menu.classList.contains('burger-menu_active')) {
+            document.querySelector('body').style.overflow = 'hidden'
+        } else document.querySelector('body').style.overflow = 'visible'
     }
-}
