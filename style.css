@@ -1237,6 +1237,7 @@ footer {
     textarea,
     .send {
         width: 106%;
+        margin: 0 0 13px 0;
     }
 
     .send {
@@ -1274,4 +1275,42 @@ footer {
     }
 }
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 375px) {
+    .vertic [src="assets/phoneV.png"] {
+        width: 70px;
+        height: 141px;
+    }
+
+    .goriz [src="assets/phoneG.png"] {
+        height: 70px;
+        width: 141px;
+    }
+
+    .vertic {
+        height: 141px;
+    }
+
+    .goriz {
+        padding: 35px 0 0 19px;
+        height: 70px;
+    }
+
+    .sliders .next {
+        padding-right: 10px;
+    }
+
+    .slid2 img {
+        padding: 0px 0px 14px 75px;
+        width: 142px;
+    }
+
+    #portfolio .navigation {
+        width: 100%;
+    }
+
+    .about-item,
+    .avatar {
+        width: 250px;
+        margin: 0;
+    }
+}
