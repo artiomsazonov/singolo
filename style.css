@@ -1304,7 +1304,10 @@ footer {
         left: 42%;
     }
 }
-
+@media screen and (max-width: 395px) {
+.gallery div {
+    margin: 0 0px 14px 0;
+}}
 @media screen and (max-width: 374px) {
     #services {
         padding-right: 10px;
