@@ -3,17 +3,21 @@ var appended = false;
 window.addEventListener("scroll", function () {
     var scroll = pageYOffset;
     var header = document.querySelector('.header-flex')
+    var burgerButton = document.querySelector(".burger-menu__button")
     if (scroll > 95) {
         if (!appended) {
             header.style.paddingTop = "0"
             header.style.paddingBottom = "0"
+            burgerButton.style.top = "2px"
             appended = true;
         }
     } else if (appended) {
         header.style.paddingTop = "30px"
         header.style.paddingBottom = "28px"
+        burgerButton.style.top = "26px"
         appended = false;
     }
+
 });
 window.addEventListener('scroll', function () {
     var scroll = pageYOffset;
@@ -179,14 +183,13 @@ cross.addEventListener('click', function () {
     mdlMsg.classList.add('none')
 })
 // burger-menu
-window.onload = function(){
+window.onload = function () {
+
     let menu = document.querySelector(".burger-menu");
     let button = menu.querySelector(".burger-menu__button");
-    let links = menu.querySelector(".burger-menu__lines");
     let overlay = menu.querySelector(".burger-menu__overlay")
     let nav = menu.querySelector(".burger-menu__nav")
-    button.onclick = toggleMenu;    
-    links.onclick = toggleMenu;
+    button.onclick = toggleMenu;
     overlay.onclick = toggleMenu;
     nav.onclick = toggleMenu;
     function toggleMenu() {

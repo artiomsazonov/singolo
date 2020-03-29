@@ -758,84 +758,10 @@ footer {
     cursor: pointer;
 }
 
-.burger-menu__button {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 30;
-    width: 80px;
-    height: 80px;
-}
-
-.burger-menu__button:hover .burger-menu__lines {
-    filter: brightness(0.7);
-}
-
-.burger-menu__lines,
-.burger-menu__lines::after,
-.burger-menu__lines::before {
-    position: absolute;
-    width: 25px;
-    height: 2.4px;
-    background-color: white;
-}
-
-.burger-menu__lines {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.burger-menu__lines::after {
-    content: "";
-    top: -6.4px
-}
-
-.burger-menu__lines::before {
-    content: "";
-    top: 6.4px
-}
-
-.burger-menu_active .burger-menu__lines {
-    transform: rotate(90deg);
-}
-
-.burger-menu_active .burger-menu__lines::before {
-    top: 6.4px;
-    transform: rotate(180deg);
-}
-
-.burger-menu_active .burger-menu__lines::after {
-    top: -6.4px;
-    transform: rotate(180deg);
-}
-.burger-menu__nav{
- padding-top: 80px;
- position: fixed;
- z-index: 20;
- display: flex;
- flex-flow: column;
- width: 278px;
- height: 100%;
- background-color: #2D303A;
- overflow: auto;
- left: 100%;
-}
-.burger-menu_active .burger-menu__nav{
-    left: 0;
-}
-.burger-menu__overlay{
+.burger-menu {
     display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;    
 }
-.burger-menu_active .burger-menu__overlay{
-    display: block;
-}
+
 @media screen and (max-width: 1020px) {
     .container {
         width: 100%;
@@ -997,13 +923,354 @@ footer {
     }
 }
 
-@media screen and (max-width: 375px) {
-    .navigation{
+@media screen and (max-width: 768px) {
+    .navigation {
         display: none;
     }
-    .header-flex {    
+
+    .header-flex {
         display: flex;
         justify-content: center;
+        padding: 25px 33px 15px 82px;
+    }
+
+    .logo h2 {
+        font-size: 19px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .burger-menu__button {
+        position: fixed;
+        top: 21px;
+        left: 28px;
+        z-index: 30;
+        width: 30px;
+        height: 30px;
+        transition: .2s linear;
+    }
+
+    .burger-menu__button:hover .burger-menu__lines {
+        filter: brightness(0.7);
+    }
+
+    .burger-menu__lines,
+    .burger-menu__lines::after,
+    .burger-menu__lines::before {
+        position: absolute;
+        width: 25px;
+        height: 2.4px;
+        background-color: white;
+    }
+
+    .burger-menu__lines {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .burger-menu__lines::after {
+        content: "";
+        top: -9.4px
+    }
+
+    .burger-menu__lines::before {
+        content: "";
+        top: 9.4px
+    }
+
+    .burger-menu_active .burger-menu__lines {
+        transform: rotate(90deg);
+    }
+
+    .burger-menu_active .burger-menu__lines::before {
+        top: 9.4px;
+        transform: rotate(180deg);
+    }
+
+    .burger-menu_active .burger-menu__lines::after {
+        top: -9.4px;
+        transform: rotate(180deg);
+    }
+
+    .burger-menu__nav {
+        padding: 180px 0 0 71px;
+        position: fixed;
+        z-index: 20;
+        display: flex;
+        flex-flow: column;
+        width: 205px;
+        height: 100%;
+        background-color: #2D303A;
+        overflow: auto;
+        left: 100%;
+    }
+
+    .burger-menu__nav a {
+        padding-bottom: 25px;
+    }
+
+    .burger-menu_active .burger-menu__nav {
+        left: 0;
+    }
+
+    .burger-menu__button h2 {
+        display: none;
+        padding: 5px 0 0 60px;
+        font-size: 19px;
+    }
+
+    .burger-menu__overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+    }
+
+    .burger-menu_active .burger-menu__overlay,
+    .burger-menu_active .burger-menu__button h2 {
+        display: block;
+    }
+
+    #slider {
+        padding-top: 90px;
+    }
+
+    .phone {
+        padding: 0px 110px 17px 40px;
+    }
+
+    .goriz {
+        padding: 46px 0 0 28px;
+        height: 88px;
+
+    }
+
+    .vertic {
+        height: 177px;
+    }
+
+    .vertic [src="assets/phoneV.png"] {
+        width: 88px;
+        height: 177px;
+    }
+
+    .goriz [src="assets/phoneG.png"] {
+        height: 88px;
+        width: 177px;
+    }
+
+    .vertic [src="assets/black.png"],
+    .goriz [src="assets/black.png"] {
+        width: 69px;
+        height: 122px;
+    }
+
+    .black {
+        left: 5px;
+        bottom: 156px;
+    }
+
+    .black-goriz {
+        left: 48px;
+        bottom: 112px;
+    }
+
+    .sliders .prev {
+        padding-left: 9px;
+    }
+
+    .sliders .next,
+    .sliders .prev {
+        bottom: 86px;
+    }
+
+    .sliders .next {
+        padding-right: 0px;
+    }
+
+    .slid2 img {
+        padding: 0px 0px 15px 116px;
+        width: 179px;
+    }
+
+    #services {
+        padding-bottom: 0px;
+    }
+
+    #services .discription {
+        padding: 0 26px 25px 31px;
+    }
+
+    h1 {
+        padding: 26px 0 19px 0;
+    }
+
+    .discription p {
+        width: 100%;
+        text-align: left;
+    }
+
+    .flex-item {
+        padding: 2px 0px 25px 0;
+        background-position: 0 2px;
+    }
+
+    .services-flex {
+        padding: 0 27px 0 33px;
+    }
+
+    .msg p,
+    .phon p,
+    .star p {
+        padding: 0px 0 0 79px;
+    }
+
+    .portfolio_title {
+        padding: 44px 13px 21px 29px;
+    }
+
+    #portfolio .navigation {
+        padding: 17px 0 25px 0;
+    }
+
+    .gallery div {
+        width: 151px;
+        height: 128px;
+        background-size: 165px 165px;
+        margin: 0 0 14px 0;
+    }
+
+    .gallery div:nth-child(1) {
+        background-position-x: -3px;
+        background-position-y: -7px;
+    }
+
+    .gallery div:nth-child(2) {
+        background-position-x: -60px;
+        background-position-y: 154px;
+        background-size: 255px 182px;
+    }
+
+    .gallery div:nth-child(3) {
+        background-position-x: 0px;
+        background-position-y: -5px;
+        background-size: 163px 230px;
+    }
+
+    .gallery div:nth-child(4) {
+        background-position-x: -8px;
+        background-position-y: -13px;
+    }
+
+    .gallery div:nth-child(5) {
+        background-position-x: -7px;
+        background-position-y: -8px;
+    }
+
+    .gallery div:nth-child(6) {
+        background-position-x: -6px;
+        background-position-y: -17px;
+    }
+
+    .gallery div:nth-child(7) {
+        background-position-x: -17px;
+        background-position-y: -29px;
+        background-size: 244px 257px;
+    }
+
+    .gallery div:nth-child(8) {
+        background-position-x: -8px;
+        background-position-y: -12px;
+    }
+
+    .gallery div:nth-child(9),
+    .gallery div:nth-child(10),
+    .gallery div:nth-child(11),
+    .gallery div:nth-child(12) {
+        display: none;
+    }
+
+    .aboutUs {
+        padding: 36px 20px 34px 30px;
+    }
+
+    .about-flex {
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-between;
+        margin: -6px 0px 0px 1px;
+    }
+
+    .about-item,
+    .avatar {
+        width: 314px;
+        height: 100%;
+        padding-top: 15px;
+    }
+
+    .about-item h3 {
+        padding: 15px 0 3px 0;
+    }
+
+    .about-item p {
+        width: 100% !important;
+    }
+
+    .get {
+        padding: 44px 30px 42px;
+    }
+
+    .quote-flex {
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-between;
+        margin: 21px 0px 0px 0px;
+    }
+
+    input,
+    textarea,
+    .send {
+        width: 106%;
+    }
+
+    .send {
+        height: 50px;
+        margin-bottom: 30px;
+    }
+
+    .quote-item p {
+        padding-top: 3px;
+        width: 105%;
+    }
+
+    .contact {
+        margin-top: 11px;
+    }
+
+    [src='assets/geo.png'] {
+        margin-left: 3px;
+    }
+
+    .footer-container p {
+        display: none;
+    }
+
+    .footer-container .social {
+        right: 88px;
+    }
+
+    #mdl_msg div {
+        padding: 20px 56px 0 50px;
+    }
+
+    .cross {
+        left: 42%;
     }
 }
 
