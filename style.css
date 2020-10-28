@@ -175,7 +175,10 @@ a {
     height: 483px;
 }
 
-
+.vertic:hover,
+.goriz:hover {
+    cursor: pointer;
+}
 
 .slid2 img {
     padding: 43px 252px 38px 252px;
@@ -186,7 +189,7 @@ a {
 }
 
 .goriz {
-    padding: 121px 0 0 73px;
+    margin: 121px 0 0 73px;
     height: 240px;
 }
 
@@ -285,7 +288,6 @@ h3 {
 
 .msg {
     background-image: url("assets/msg.png");
-
 }
 
 .phon {
@@ -305,6 +307,7 @@ h3 {
 
 
 /* singolo 2 */
+
 #portfolio {
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
@@ -365,7 +368,6 @@ button:focus {
 .all {
     padding: 1px 7px;
 }
-
 
 .artwork {
     padding: 0px 6px 0px 5px;
@@ -488,7 +490,6 @@ button:focus {
     width: 960px;
     display: flex;
     margin: 44px 0px 0px 0px;
-
 }
 
 .about-item {
@@ -537,17 +538,11 @@ button:focus {
     cursor: pointer;
 }
 
-.social span:hover {
-    border: 3px solid #f06c64;
-
-}
-
 .social .facebook {
     background-image: url(assets/facebook.png);
     background-position: center;
     background-repeat: no-repeat;
 }
-
 
 .social .gPlus {
     background-image: url(assets/google+.png);
@@ -555,19 +550,23 @@ button:focus {
     background-repeat: no-repeat;
 }
 
-
 .social .twit {
     background-image: url(assets/twitter.png);
     background-position: center;
     background-repeat: no-repeat;
 }
 
-
 .social .link {
     background-image: url(assets/linkedin.png);
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.social span:hover {
+    background-color: rgba(178, 77, 218, 0.3);
+    transform: 0.3s;
+}
+
 
 /*
 singolo 3*/
@@ -602,7 +601,6 @@ singolo 3*/
     width: 960px;
     display: flex;
     margin: 44px 0px 0px 0px;
-
 }
 
 input,
@@ -637,7 +635,6 @@ input::placeholder {
     font-size: 14px;
     width: 136px;
     text-align: center;
-
 }
 
 .send:hover {
@@ -726,11 +723,9 @@ footer {
     margin-right: 6px;
 }
 
-
 .footer-container .social .gPlus {
     margin-right: 4px;
 }
-
 
 .footer-container .social .twit {
     margin-right: 7px;
@@ -791,154 +786,121 @@ footer {
     .vertic {
         height: 364px;
     }
-
     .vertic [src="assets/phoneV.png"] {
         width: 180px;
         height: 363px;
     }
-
     .vertic [src="assets/black.png"],
     .goriz [src="assets/black.png"] {
         width: 142px;
         height: 251px;
     }
-
     .slid2 img {
         width: 364px;
         height: 363px;
         padding: 40px 0 38px 205px;
     }
-
     .goriz [src="assets/phoneG.png"] {
         height: 180px;
         width: 363px;
     }
-
     .black {
         left: 10px;
         bottom: 318px;
     }
-
     .black-goriz {
         left: 99px;
         bottom: 228px;
     }
-
     .sliders .next,
     .sliders .prev {
         bottom: 201px;
     }
-
     .sliders .prev {
         padding-left: 28px;
     }
-
     .sliders .next {
         padding-right: 27px;
     }
-
     .gallery {
         width: 100%;
     }
-
     .gallery div {
         width: 216px;
         height: 183px;
         margin: 0 0 20px 0;
     }
-
     .about-flex {
         width: 100%;
     }
-
     .about-item,
     .avatar {
         width: 219px;
         height: 219px;
         margin: 0 15px 0 0;
     }
-
     .about-item p {
         width: 219px !important;
     }
-
     .get_quote p {
         width: 100%;
     }
-
     input,
     textarea {
         width: 442px;
         height: 37px;
         margin: 0 27px 13px 0;
     }
-
     textarea {
         height: 159px;
     }
-
     .quote-flex {
         width: 100%;
     }
-
     .footer-container .social {
         right: 35px;
     }
-
     /* подгон */
     .navigation ul {
         padding-top: 10px;
     }
-
     .phone {
         padding: 41px 110px 39px 84px;
     }
-
     .goriz {
         padding: 92px 0 0 55px;
     }
-
     h1 {
         padding: 39px 0 19px 0;
     }
-
     .flex-item {
         padding: 11px 33px 42px 0;
         background-position: 0 12px;
     }
-
     #services {
         padding-bottom: 18px;
     }
-
     .discription p {
         width: 638px;
     }
-
     #portfolio .navigation {
         padding: 11px 0 31px 0;
     }
-
     .aboutUs {
         padding: 55px 40px 209px 40px;
     }
-
     .about-flex {
         margin: 39px 0px 0px 2px;
     }
-
     .about-item h3 {
         padding: 8px 0 3px 0;
     }
-
     .social span {
         margin: 14px 5px 0 0px;
     }
-
     .get {
         padding: 52px 40px 29px;
     }
-
     .quote-flex {
         margin: 25px 0px 0px 0px;
     }
@@ -957,37 +919,31 @@ footer {
     .navigation {
         display: none;
     }
-
     .header-flex {
         display: flex;
         justify-content: center;
         padding: 23px 49px 15px 82px;
     }
-
     .logo h2 {
         font-size: 19px;
     }
-
     /* burger-menu */
     .burger-menu {
         display: block;
     }
-
     .burger-menu__button {
         position: fixed;
         top: 19px;
-        left: 28px;
+        right: 28px;
         z-index: 30;
         width: 30px;
         height: 30px;
         transition: .2s linear;
         transition: 0.4s;
     }
-
     .burger-menu__button:hover .burger-menu__lines {
         filter: brightness(0.7);
     }
-
     .burger-menu__lines,
     .burger-menu__lines::after,
     .burger-menu__lines::before {
@@ -997,37 +953,30 @@ footer {
         background-color: white;
         transition: 0.2s;
     }
-
     .burger-menu__lines {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
     .burger-menu__lines::after {
         content: "";
         top: -9.4px
     }
-
     .burger-menu__lines::before {
         content: "";
         top: 9.4px
     }
-
     .burger-menu_active .burger-menu__lines {
         transform: rotate(90deg);
     }
-
     .burger-menu_active .burger-menu__lines::before {
         top: 9.4px;
         transform: rotate(180deg);
     }
-
     .burger-menu_active .burger-menu__lines::after {
         top: -9.4px;
         transform: rotate(180deg);
     }
-
     .burger-menu__nav {
         padding: 180px 0 0 71px;
         position: fixed;
@@ -1038,24 +987,20 @@ footer {
         height: 100%;
         background-color: #2D303A;
         overflow: auto;
-        left: -100%;
+        right: -100%;
         transition: 0.6s;
     }
-
     .burger-menu__nav a {
         padding-bottom: 25px;
     }
-
     .burger-menu_active .burger-menu__nav {
-        left: 0;
+        right: 0;
     }
-
     .burger-menu__button h2 {
         display: none;
         padding: 5px 0 0 60px;
         font-size: 19px;
     }
-
     .burger-menu__overlay {
         display: none;
         position: fixed;
@@ -1065,250 +1010,199 @@ footer {
         height: 100%;
         z-index: 10;
     }
-
     .burger-menu_active .burger-menu__overlay,
     .burger-menu_active .burger-menu__button h2 {
         display: block;
     }
-
     #slider {
         padding-top: 90px;
     }
-
     .phone {
         padding: 0px 110px 17px 40px;
     }
-
     .goriz {
         padding: 46px 0 0 28px;
         height: 88px;
-
     }
-
     .vertic {
         height: 177px;
     }
-
     .vertic [src="assets/phoneV.png"] {
         width: 88px;
         height: 177px;
     }
-
     .goriz [src="assets/phoneG.png"] {
         height: 88px;
         width: 177px;
     }
-
     .vertic [src="assets/black.png"],
     .goriz [src="assets/black.png"] {
         width: 69px;
         height: 122px;
     }
-
     .black {
         left: 5px;
         bottom: 156px;
     }
-
     .black-goriz {
         left: 48px;
         bottom: 112px;
     }
-
     .sliders .prev {
         padding-left: 9px;
     }
-
     .sliders .next,
     .sliders .prev {
         bottom: 86px;
     }
-
     .sliders .next {
         padding-right: 10px;
     }
-
     .slid2 img {
         padding: 0px 0px 15px 116px;
         width: 179px;
         height: 178px;
-
     }
-
     #services {
         padding-bottom: 0px;
     }
-
     #services .discription {
         padding: 0 36px 25px 31px;
     }
-
     h1 {
         padding: 26px 0 19px 0;
     }
-
     .discription p {
         width: 100%;
         text-align: left;
     }
-
     .flex-item {
         padding: 2px 0px 25px 0;
         background-position: 0 2px;
     }
-
     .services-flex {
         padding: 0 27px 0 33px;
     }
-
     .msg p,
     .phon p,
     .star p {
         padding: 0px 0 0 79px;
     }
-
     .portfolio_title {
         padding: 44px 13px 21px 29px;
     }
-
     #portfolio .navigation {
         padding: 17px 0 25px 0;
     }
-
     .gallery div {
         width: 151px;
         height: 128px;
         background-size: 165px 165px;
         margin: 0 15px 14px 0;
     }
-
     .gallery div:nth-child(1) {
         background-position-x: -3px;
         background-position-y: -7px;
     }
-
     .gallery div:nth-child(2) {
         background-position-x: -60px;
         background-position-y: 154px;
         background-size: 255px 182px;
     }
-
     .gallery div:nth-child(3) {
         background-position-x: 0px;
         background-position-y: -5px;
         background-size: 163px 230px;
     }
-
     .gallery div:nth-child(4) {
         background-position-x: -8px;
         background-position-y: -13px;
     }
-
     .gallery div:nth-child(5) {
         background-position-x: -7px;
         background-position-y: -8px;
     }
-
     .gallery div:nth-child(6) {
         background-position-x: -6px;
         background-position-y: -17px;
     }
-
     .gallery div:nth-child(7) {
         background-position-x: -17px;
         background-position-y: -29px;
         background-size: 244px 257px;
     }
-
     .gallery div:nth-child(8) {
         background-position-x: -8px;
         background-position-y: -12px;
     }
-
     .gallery div:nth-child(9),
     .gallery div:nth-child(10),
     .gallery div:nth-child(11),
     .gallery div:nth-child(12) {
         display: none;
     }
-
     .aboutUs {
         padding: 36px 20px 34px 30px;
     }
-
     .about-flex {
         flex-wrap: wrap;
         align-content: flex-start;
         justify-content: space-between;
         margin: -6px 0px 0px 1px;
     }
-
     .about-item,
     .avatar {
         width: 314px;
         height: 100%;
         padding-top: 15px;
     }
-
     .about-item h3 {
         padding: 15px 0 3px 0;
     }
-
     .about-item p {
         width: 100% !important;
     }
-
     .get {
-        padding: 44px 30px 42px;}
-
+        padding: 44px 30px 42px;
+    }
     .quote-flex {
         flex-wrap: wrap;
         align-content: flex-start;
         justify-content: space-between;
         margin: 21px 0px 0px 0px;
     }
-
     .aboutUs .discription {
         padding: 0 27px 2px 0;
     }
-
     input,
     textarea,
     .send {
         width: 315px;
         margin: 0 0 13px 0;
     }
-
     .send {
         height: 50px;
         margin-bottom: 36px;
     }
-
     .quote-item p {
         padding-top: 3px;
         width: 103%;
     }
-
     .contact {
         margin-top: 11px;
     }
-
     [src='assets/geo.png'] {
         margin-left: 3px;
     }
-
     .footer-container p {
         display: none;
     }
-
     .footer-container .social {
         right: 105px;
     }
-
     #mdl_msg div {
         padding: 20px 56px 0 50px;
     }
-
     .cross {
         left: 42%;
     }
@@ -1322,50 +1216,40 @@ footer {
     #services {
         padding-right: 10px;
     }
-
     .vertic [src="assets/phoneV.png"] {
         width: 70px;
         height: 141px;
     }
-
     .goriz [src="assets/phoneG.png"] {
         height: 70px;
         width: 141px;
     }
-
     .vertic {
         height: 141px;
     }
-
     .goriz {
         padding: 35px 0 0 19px;
         height: 70px;
     }
-
     .sliders .next {
         padding-right: 10px;
     }
-
     .slid2 img {
         padding: 0px 0px 14px 75px;
         width: 142px;
         height: 141px;
     }
-
     #portfolio .navigation {
         width: 100%;
     }
-
     .about-item,
     .avatar {
         width: 250px;
         margin: 0;
     }
-
     .gallery div {
         width: 120px;
         height: 90px;
         background-size: 120px 90px;
     }
-    
 }
